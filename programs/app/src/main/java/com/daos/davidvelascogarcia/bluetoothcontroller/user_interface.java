@@ -158,50 +158,50 @@ public class user_interface extends AppCompatActivity {
         id_mirar_arriba.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
-                MyConexionBT.write("g");
+                MyConexionBT.write("i");
             }
         });
         id_mirar_abajo.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
-                MyConexionBT.write("h");
+                MyConexionBT.write("j");
             }
         });
         id_mirar_derecha.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
-                MyConexionBT.write("i");
+                MyConexionBT.write("g");
             }
         });
         id_mirar_izquierda.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
-                MyConexionBT.write("j");
+                MyConexionBT.write("h");
             }
         });
         id_modo_vigia.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
-                MyConexionBT.write("k");
+                MyConexionBT.write("m");
             }
         });
         id_modo_defensa.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
-                MyConexionBT.write("l");
+                MyConexionBT.write("y");
             }
         });
         id_modo_autonomo.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
-                MyConexionBT.write("m");
+                MyConexionBT.write("k");
             }
         });
 
         id_modo_analisis.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
-                MyConexionBT.write("n");
+                MyConexionBT.write("r");
             }
         });
         id_desconectar.setOnClickListener(new View.OnClickListener() {
