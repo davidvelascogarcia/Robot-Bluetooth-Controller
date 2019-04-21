@@ -1,13 +1,18 @@
-# Robot: Bluetooth Controller
-[![Build Status](https://travis-ci.org/davidvelascogarcia/Robot-Bluetooth-Controller.svg?branch=master)](https://travis-ci.org/davidvelascogarcia/Robot-Bluetooth-Controller)
+# robot-bluetooth-controller: App control robot vía bluetooth
+[![Build Status](https://travis-ci.org/davidvelascogarcia/robot-bluetooth-controller.svg?branch=master)](https://travis-ci.org/davidvelascogarcia/robot-bluetooth-controller)
 
 - [Introducción](#introducción)
+- [Listado de programas](#listado-de-programas)
 - [Enlaces de interés](#enlaces-de-interés)
 
 ## Introduccción
 
-Controlador de robot con placas Arduino por bluetooth desde dispositivos Android. 
+`robot-bluetooth-controller`, implementación de `app` controlador de robot con placas `Arduino` por `bluetooth` desde dispositivos `Android`.
+
+## Listado de programas
+
+Se adjunta el listado de aplicaciones implementadas en [./programs](./programs).
 
 ## Enlaces de interés
 
-[Programa](./programs)
+* [Android Studio](https://developer.android.com/studio)
