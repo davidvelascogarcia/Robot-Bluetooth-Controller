@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="19dp"
         android:text="Listado de dispositivos vinculados"
         android:textAlignment="center"
         android:textSize="18sp"
@@ -21,10 +21,9 @@
     <ListView
         android:id="@+id/id_lista_dispositivos_bluetooth"
         android:layout_width="match_parent"
-        android:layout_height="388dp"
-        android:layout_below="@+id/id_titulo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="23dp" />
+        android:layout_height="358dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
 
     <TextView
         android:id="@+id/id_autor_main"

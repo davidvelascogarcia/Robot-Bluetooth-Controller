@@ -36,22 +36,7 @@ public class user_interface extends AppCompatActivity {
 
     // Objetos de los elementos gráficos
 
-    Button id_desconectar;
-
-    // Objetos de control de movimiento
-
-    Button id_adelante, id_atras, id_derecha, id_izquierda, id_girar_derecha, id_girar_izquierda;
-
-    // Objetos de control de vista
-
-    Button id_mirar_derecha, id_mirar_izquierda, id_mirar_arriba, id_mirar_abajo;
-
-    // Objetos de modos de control
-
-    Button id_modo_vigia, id_modo_autonomo, id_modo_analisis, id_modo_defensa;
-
-    // Objetos de elemento gráficos
-
+    Button id_encender, id_apagar,id_desconectar;
     TextView id_buffer_in;
     Handler bluetooth_in;
 
@@ -80,22 +65,10 @@ public class user_interface extends AppCompatActivity {
 
         // Enlazar objetos del XML con los objetos creados en el código
 
+        id_encender = (Button) findViewById(R.id.id_encender);
+        id_apagar = (Button) findViewById(R.id.id_apagar);
         id_desconectar = (Button) findViewById(R.id.id_desconectar);
         id_buffer_in = (TextView) findViewById(R.id.id_buffer_in);
-        id_adelante = (Button) findViewById(R.id.id_adelante);
-        id_atras = (Button) findViewById(R.id.id_atras);
-        id_derecha = (Button) findViewById(R.id.id_derecha);
-        id_izquierda = (Button) findViewById(R.id.id_izquierda);
-        id_girar_derecha = (Button) findViewById(R.id.id_girar_derecha);
-        id_girar_izquierda = (Button) findViewById(R.id.id_girar_izquierda);
-        id_mirar_arriba = (Button) findViewById(R.id.id_mirar_arriba);
-        id_mirar_abajo = (Button) findViewById(R.id.id_mirar_abajo);
-        id_mirar_derecha = (Button) findViewById(R.id.id_mirar_derecha);
-        id_mirar_izquierda = (Button) findViewById(R.id.id_mirar_izquierda);
-        id_modo_analisis = (Button) findViewById(R.id.id_modo_analisis);
-        id_modo_autonomo = (Button) findViewById(R.id.id_modo_autonomo);
-        id_modo_defensa = (Button) findViewById(R.id.id_modo_defensa);
-        id_modo_vigia = (Button) findViewById(R.id.id_modo_vigia);
 
         bluetooth_in = new Handler() {
             public void handleMessage(android.os.Message msg) {
@@ -119,91 +92,19 @@ public class user_interface extends AppCompatActivity {
 
         // Configuramos al hacer click en el botón
 
-        id_adelante.setOnClickListener(new View.OnClickListener() {
+        id_encender.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
-                MyConexionBT.write("a");
-            }
-        });
-        id_atras.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                MyConexionBT.write("b");
-            }
-        });
-        id_derecha.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                MyConexionBT.write("c");
-            }
-        });
-        id_izquierda.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                MyConexionBT.write("d");
-            }
-        });
-        id_girar_derecha.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                MyConexionBT.write("e");
-            }
-        });
-        id_girar_izquierda.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                MyConexionBT.write("f");
-            }
-        });
-        id_mirar_arriba.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                MyConexionBT.write("i");
-            }
-        });
-        id_mirar_abajo.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                MyConexionBT.write("j");
-            }
-        });
-        id_mirar_derecha.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                MyConexionBT.write("g");
-            }
-        });
-        id_mirar_izquierda.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                MyConexionBT.write("h");
-            }
-        });
-        id_modo_vigia.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                MyConexionBT.write("m");
-            }
-        });
-        id_modo_defensa.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                MyConexionBT.write("y");
-            }
-        });
-        id_modo_autonomo.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                MyConexionBT.write("k");
+                MyConexionBT.write("1");
             }
         });
 
-        id_modo_analisis.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                MyConexionBT.write("r");
+        id_apagar.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                MyConexionBT.write("0");
             }
         });
+
         id_desconectar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if (btSocket!=null)
