@@ -1,5 +1,5 @@
-# robot-bluetooth-controller: App control robot vía bluetooth
-[![Build Status](https://travis-ci.org/davidvelascogarcia/robot-bluetooth-controller.svg?branch=master)](https://travis-ci.org/davidvelascogarcia/robot-bluetooth-controller)
+# android-robot-bluetooth-controller: App control robot vía bluetooth
+[![Build Status](https://travis-ci.org/davidvelascogarcia/android-robot-bluetooth-controller.svg?branch=master)](https://travis-ci.org/davidvelascogarcia/android-robot-bluetooth-controller)
 
 - [Introducción](#introducción)
 - [Listado de programas](#listado-de-programas)
